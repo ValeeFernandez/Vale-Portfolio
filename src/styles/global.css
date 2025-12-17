@@ -1,1 +1,103 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-spin-slower {
+    animation: spin 35s linear infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin 22s linear infinite;
+  }
+
+  .animate-spin-reverse-slow {
+    animation: spin-reverse 28s linear infinite;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 6s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 8s ease-in-out infinite;
+  }
+
+  /* Brillo rápido que cruza el botón */
+  @keyframes shine {
+    100% {
+      transform: translateX(250%) skewX(-25deg);
+    }
+  }
+
+  .animate-shine {
+    animation: shine 0.8s ease-in-out forwards;
+  }
+
+  /* Entrada suave del texto */
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bounce-slow {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  33% {
+    transform: translate(15px, -15px);
+  }
+
+  66% {
+    transform: translate(-10px, 10px);
+  }
+}
+
+@layer utilities {}

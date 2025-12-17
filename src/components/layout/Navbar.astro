@@ -1,0 +1,94 @@
+<nav
+  class="w-full border-b-2 border-primary/20 bg-background/80 backdrop-blur-md sticky top-0 z-50"
+>
+  <div class="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
+    <a
+      href="/"
+      class="group flex items-center gap-1 text-xl tracking-tighter transition-transform hover:scale-105"
+    >
+      <span class="text-accent font-bold">&lt;</span>
+      <span
+        class="font-black text-primary group-hover:text-primaryDark transition-colors"
+        >Vale</span
+      >
+      <span class="text-accent font-bold">/&gt;</span>
+    </a>
+
+    <ul
+      class="hidden md:flex gap-12 text-sm font-bold uppercase tracking-[0.2em] text-primaryDark"
+    >
+      <li>
+        <a
+          href="#about"
+          class="relative transition-colors hover:text-accent group/link"
+        >
+          Home
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all group-hover/link:w-full"
+          ></span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#about"
+          class="relative transition-colors hover:text-accent group/link"
+        >
+          About
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all group-hover/link:w-full"
+          ></span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#projects"
+          class="relative transition-colors hover:text-accent group/link"
+        >
+          Projects
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all group-hover/link:w-full"
+          ></span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#contact"
+          class="relative transition-colors hover:text-accent group/link"
+        >
+          Contact
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all group-hover/link:w-full"
+          ></span>
+        </a>
+      </li>
+    </ul>
+
+    <button
+      id="menu-btn"
+      class="md:hidden text-primary text-2xl"
+      aria-label="Open menu">
+      ☰
+    </button>
+  </div>
+
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden px-6 pb-6 bg-background border-b border-primary/10">
+    <ul
+      class="flex flex-col gap-5 text-sm font-bold uppercase tracking-widest text-primary"
+    >
+      <li><a href="#about" class="hover:text-accent">About</a></li>
+      <li><a href="#projects" class="hover:text-accent">Projects</a></li>
+      <li><a href="#contact" class="hover:text-accent">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  btn?.addEventListener("click", () => {
+    menu?.classList.toggle("hidden");
+  });
+</script>
