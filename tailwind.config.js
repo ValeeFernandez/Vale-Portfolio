@@ -1,23 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ["./src/**/*.{astro,html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        background: "#eceae6ff",
-        primary: "#7D6AA6",
-        primaryDark: "#6F618C",
-        accent: "#D989CB",
+        background: "var(--background)",
+        primary: "var(--primary)",
+        primaryDark: "var(--primary-dark)",
+        accent: "var(--accent)",
+        muted: "var(--text-muted)",
       },
     },
   },
   plugins: [],
 };
-
-
-
-
-
-
-
-

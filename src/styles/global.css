@@ -2,7 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===============================
+   🎨 COLOR SYSTEM (CSS VARIABLES)
+   =============================== */
+
+:root {
+  /* Base */
+  --background: #eceae6;
+  --primary: #7d6aa6;
+  --primary-dark: #6f618c;
+  --accent: #d989cb;
+
+  /* Text */
+  --text-muted: #4b5563;
+
+  /* Decorative */
+  --glow-color: rgba(217, 137, 203, 0.25);
+  --circle-border: rgba(125, 106, 166, 0.35);
+}
+
+.dark {
+  --background: #0f0a1a;
+  --primary: #a394cc;
+  --primary-dark: #e9e4f5;
+  --accent: #f472d0;
+
+  --text-muted: #9ca3af;
+
+  --glow-color: rgba(163, 148, 204, 0.45);
+  --circle-border: rgba(217, 137, 203, 0.55);
+}
+
+/* ===============================
+   🧱 BASE FIXES
+   =============================== */
+
+body {
+  background-color: var(--background);
+  color: var(--primary-dark);
+}
+
+/* Text helpers (sin !important) */
+.text-muted {
+  color: var(--text-muted);
+}
+
+/* ===============================
+   ✨ DECORATIVE UTILITIES
+   =============================== */
+
 @layer utilities {
+
+  /* Glow backgrounds (Hero circles, accents) */
+  .bg-glow {
+    background-color: var(--glow-color);
+    backdrop-filter: blur(6px);
+  }
+
+  /* Borders for animated circles */
+  .border-glow {
+    border-color: var(--circle-border);
+  }
+
+  /* Outline buttons / tags */
+  .border-soft {
+    border-color: var(--primary-dark);
+  }
+
+  .dark .border-soft {
+    border-color: #ffffff;
+  }
+
+  /* ===============================
+     🌀 ANIMATIONS
+     =============================== */
+
   .animate-spin-slower {
     animation: spin 35s linear infinite;
   }
@@ -23,34 +97,19 @@
     animation: float 8s ease-in-out infinite;
   }
 
-  /* Brillo rápido que cruza el botón */
-  @keyframes shine {
-    100% {
-      transform: translateX(250%) skewX(-25deg);
-    }
-  }
-
   .animate-shine {
     animation: shine 0.8s ease-in-out forwards;
   }
 
-  /* Entrada suave del texto */
   .animate-fade-in {
     animation: fadeIn 1s ease-out forwards;
   }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 }
+
+/* ===============================
+   🎞️ KEYFRAMES
+   =============================== */
 
 @keyframes spin {
   from {
@@ -100,4 +159,42 @@
   }
 }
 
-@layer utilities {}
+@keyframes shine {
+  100% {
+    transform: translateX(250%) skewX(-25deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blob {
+  0% {
+    border-radius: 50% 50% 50% 50%;
+  }
+  25% {
+    border-radius: 60% 40% 55% 45%;
+  }
+  50% {
+    border-radius: 45% 65% 40% 60%;
+  }
+  75% {
+    border-radius: 55% 45% 60% 40%;
+  }
+  100% {
+    border-radius: 50% 50% 50% 50%;
+  }
+}
+
+.animate-blob {
+  animation: blob 14s ease-in-out infinite;
+}

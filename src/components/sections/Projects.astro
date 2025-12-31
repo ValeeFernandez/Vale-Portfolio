@@ -7,315 +7,318 @@ import aiDocsImg from "/src/images/ai-docs.png";
 import pokeImg from "/src/images/pokeprojects.png";
 
 const academicProjects = [
-    {
-        title: "SafeSteps – Hiking Safety App",
-        description:
-            "Mobile application focused on hiking safety, covering the full development lifecycle from analysis to implementation.",
-        image: safestepsImg,
-        tech: ["Ionic", "TypeScript", "Capacitor", "Firebase"],
-        github: "https://github.com/ValeeFernandez/SafeSteps", 
-    },
-    {
-        title: "OkaryMsc – Music Platform (Frontend)",
-        description:
-            "Frontend development of a music management platform with a focus on UI components and GraphQL data integration.",
-        image: okaryImg,
-        tech: ["Angular", "TypeScript", "GraphQL", "CSS"],
-        github: "https://github.com/ValeeFernandez/OkaryMsc", 
-    },
-    {
-        title: "AI Virtual Assistant – Documentation",
-        description:
-            "Internal technical documentation for an AI-powered virtual assistant, focused on architecture, workflows, and system usage.",
-        image: aiDocsImg,
-        tech: ["Docusaurus", "Markdown", "Technical Writing"],
-        
-    },
-    {
-        title: "PokeProjects – Pokédex SPA",
-        description:
-            "Single Page Application built with React and Express that consumes the PokeAPI to display, compare, and manage Pokémon data.",
-        image: pokeImg,
-        tech: ["React", "CSS", "IndexedDB", "Service Workers", "PokeAPI"],
-        github: "https://github.com/ValeeFernandez/PokeProject", 
-    },
+  {
+    title: "SafeSteps – Hiking Safety App",
+    description:
+      "Mobile application focused on hiking safety, covering the full development lifecycle from analysis to implementation.",
+    image: safestepsImg,
+    tech: ["Ionic", "TypeScript", "Capacitor", "Firebase"],
+    github: "https://github.com/ValeeFernandez/SafeSteps",
+  },
+  {
+    title: "OkaryMsc – Music Platform (Frontend)",
+    description:
+      "Frontend development of a music management platform with a focus on UI components and GraphQL data integration.",
+    image: okaryImg,
+    tech: ["Angular", "TypeScript", "GraphQL", "CSS"],
+    github: "https://github.com/ValeeFernandez/OkaryMsc",
+  },
+  {
+    title: "PokeProjects – Pokédex SPA",
+    description:
+      "Single Page Application built with React and Express that consumes the PokeAPI to display, compare, and manage Pokémon data.",
+    image: pokeImg,
+    tech: ["React", "CSS", "IndexedDB", "Service Workers", "PokeAPI"],
+    github: "https://github.com/ValeeFernandez/PokeProject",
+  },
+  {
+    title: "AI Virtual Assistant – Documentation",
+    description:
+      "Internal technical documentation for an AI-powered virtual assistant, focused on architecture, workflows, and system usage.",
+    image: aiDocsImg,
+    tech: ["Docusaurus", "Markdown", "Technical Writing"],
+  },
 ];
 ---
 
 <section id="projects" class="bg-background">
-    <div class="py-24 max-w-6xl mx-auto px-6">
-        <div class="mb-20 text-right md:text-left">
-            <h2
-                class="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4"
-            >
-                01. Professional Experience
-            </h2>
-            <h3
-                class="text-4xl md:text-5xl font-black text-primary tracking-tighter uppercase"
-            >
-                Internal <span class="text-primaryDark">Solutions</span>
-            </h3>
-            <div
-                class="w-16 h-1.5 bg-accent/60 mt-6 rounded-full md:ml-0 ml-auto"
-            >
-            </div>
-        </div>
-
-        <div class="grid gap-10">
-            <div
-                class="relative bg-white/40 backdrop-blur-sm border-2 border-primaryDark/5 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-10 items-start hover:border-accent/20 hover:shadow-xl hover:shadow-primary/5 transition-all duration-500 group"
-            >
-                <div
-                    class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent flex items-center justify-center shrink-0 border border-primary/10 group-hover:from-accent/10 transition-all duration-500"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="w-10 h-10 text-primaryDark/40 group-hover:text-accent/60 transition-colors duration-500"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M9 12h6m-6 4h6m-7 4h8a2 2 0 002-2V6a2 2 0 00-2-2H8a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        ></path>
-                    </svg>
-                </div>
-
-                <div class="flex-1 space-y-6">
-                    <div
-                        class="flex flex-col md:flex-row md:items-center justify-between gap-4"
-                    >
-                        <h4
-                            class="text-2xl font-black text-primaryDark tracking-tight"
-                        >
-                            IT Management System (SGI)
-                        </h4>
-                        <div
-                            class="flex flex-col items-start md:items-end gap-2"
-                        >
-                            <span
-                                class="inline-block px-4 py-1 rounded-full bg-primaryDark/5 text-primaryDark/60 text-[10px] font-black uppercase tracking-widest border border-primaryDark/10"
-                            >
-                                Enterprise Project · CATSA
-                            </span>
-                            <span
-                                class="text-[10px] font-bold uppercase tracking-widest text-primaryDark/40"
-                                >Feb 2024 – Jun 2025</span
-                            >
-                        </div>
-                    </div>
-
-                    <ul class="space-y-4 text-gray-600 font-medium">
-                        <li class="flex gap-4 items-start">
-                            <span class="text-accent font-black">→</span>
-                            <span
-                                >Requirements analysis and documentation for IT
-                                asset inventory and maintenance management.</span
-                            >
-                        </li>
-                        <li class="flex gap-4 items-start">
-                            <span class="text-accent font-black">→</span>
-                            <span
-                                >Development of an internal system to track,
-                                assign, and maintain technological equipment.</span
-                            >
-                        </li>
-                    </ul>
-
-                    <div
-                        class="flex flex-wrap gap-4 pt-4 border-t border-primary/5"
-                    >
-                        {
-                            ["Oracle APEX", "Oracle Database", "SQL"].map(
-                                (tech) => (
-                                    <span class="text-xs font-bold text-primaryDark/40 uppercase tracking-widest">
-                                        {tech}
-                                    </span>
-                                ),
-                            )
-                        }
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="relative bg-white/40 backdrop-blur-sm border-2 border-primaryDark/5 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-10 items-start hover:border-accent/20 hover:shadow-xl hover:shadow-primary/5 transition-all duration-500 group"
-            >
-                <div
-                    class="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent flex items-center justify-center shrink-0 border border-primary/10 group-hover:from-accent/10 transition-all duration-500"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="w-10 h-10 text-primaryDark/40 group-hover:text-accent/60 transition-colors duration-500"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zM6 22v-2a6 6 0 0112 0v2"
-                        ></path>
-                    </svg>
-                </div>
-
-                <div class="flex-1 space-y-6">
-                    <div
-                        class="flex flex-col md:flex-row md:items-center justify-between gap-4"
-                    >
-                        <h4
-                            class="text-2xl font-black text-primaryDark tracking-tight"
-                        >
-                            Virtual Billing Assistant
-                        </h4>
-                        <div
-                            class="flex flex-col items-start md:items-end gap-2"
-                        >
-                            <span
-                                class="inline-block px-4 py-1 rounded-full bg-primaryDark/5 text-primaryDark/60 text-[10px] font-black uppercase tracking-widest border border-primaryDark/10"
-                            >
-                                Professional Internship · CONTICR
-                            </span>
-                            <span
-                                class="text-[10px] font-bold uppercase tracking-widest text-primaryDark/40"
-                                >Jul 2025 – Nov 2025</span
-                            >
-                        </div>
-                    </div>
-
-                    <ul class="space-y-4 text-gray-600 font-medium">
-                        <li class="flex gap-4 items-start">
-                            <span class="text-accent font-black">→</span>
-                            <span
-                                >Designed and implemented a virtual assistant to
-                                automate basic electronic invoice generation via
-                                WhatsApp.</span
-                            >
-                        </li>
-                        <li class="flex gap-4 items-start">
-                            <span class="text-accent font-black">→</span>
-                            <span
-                                >Integrated AI-driven natural language
-                                processing using <span
-                                    class="text-primary font-bold"
-                                    >Gemini 2.0</span
-                                >.</span
-                            >
-                        </li>
-                    </ul>
-
-                    <div
-                        class="flex flex-wrap gap-4 pt-4 border-t border-primary/5"
-                    >
-                        {
-                            [
-                                "n8n",
-                                "WhatsApp API",
-                                "Gemini 2.0 Flash",
-                                "Oracle APEX",
-                                "Docker",
-                            ].map((tech) => (
-                                <span class="text-xs font-bold text-primaryDark/40 uppercase tracking-widest">
-                                    {tech}
-                                </span>
-                            ))
-                        }
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="py-24 max-w-6xl mx-auto px-6">
+    <!-- PROYECTOS PROFESIONALES -->
+    <div class="mb-20 text-right md:text-left">
+      <h2
+        class="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4"
+      >
+        01. Professional Experience
+      </h2>
+      <h3
+        class="text-4xl md:text-5xl font-black text-primary tracking-tighter uppercase"
+      >
+        Internal <span class="text-primaryDark">Solutions</span>
+      </h3>
+      <div class="w-16 h-1.5 bg-accent/60 mt-6 rounded-full md:ml-0 ml-auto">
+      </div>
     </div>
 
-    <div class="py-22 max-w-6xl mx-auto px-6">
-        <div class="mb-20">
-            <h2
-                class="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4"
-            >
-                02. Academic Showcase
-            </h2>
-            <h3
-                class="text-4xl md:text-5xl font-black text-primary tracking-tighter uppercase"
-            >
-                Selected <span class="text-primaryDark">Projects</span>
-            </h3>
-            <div class="w-16 h-1.5 bg-accent/60 mt-6 rounded-full"></div>
+    <!-- CONTENEDOR PROYECTOS -->
+    <div class="grid gap-10">
+      <!-- Project 1 -->
+      <div
+        class="relative border-2 border-accent rounded-3xl p-8 md:p-12
+           flex flex-col md:flex-row gap-10 items-start
+           transition-all duration-300
+          hover:border-glow group"
+      >
+        <div
+          class="w-20 h-20 rounded-2xl flex items-center justify-center shrink-0
+             border-2 border-accent
+             transition-colors duration-300
+             group-hover:border-glow"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 h-10 text-primaryDark"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M9 12h6m-6 4h6m-7 4h8a2 2 0 002-2V6a2 2 0 00-2-2H8a2 2 0 00-2 2v12a2 2 0 002 2z"
+            ></path>
+          </svg>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-x-12 gap-y-24">
+        <div class="flex-1 space-y-6">
+          <div
+            class="flex flex-col md:flex-row md:items-center justify-between gap-4"
+          >
+            <h4 class="text-2xl font-black text-primaryDark tracking-tight">
+              IT Management System (SGI)
+            </h4>
+            <div class="flex flex-col items-start md:items-end gap-2">
+              <span
+                class="inline-block px-4 py-1 rounded-full
+                   border-2 border-soft
+                   text-primaryDark text-[10px] font-black uppercase tracking-widest"
+              >
+                Enterprise Project · CATSA
+              </span>
+              <span
+                class="text-[10px] font-bold uppercase tracking-widest text-muted"
+              >
+                Feb 2024 – Jun 2025
+              </span>
+            </div>
+          </div>
+
+          <ul class="space-y-4 text-muted font-medium">
+            <li class="flex gap-4 items-start">
+              <span class="text-accent font-black">→</span>
+              <span>
+                Requirements analysis and documentation for IT asset inventory
+                and maintenance management.
+              </span>
+            </li>
+            <li class="flex gap-4 items-start">
+              <span class="text-accent font-black">→</span>
+              <span>
+                Development of an internal system to track, assign, and maintain
+                technological equipment.
+              </span>
+            </li>
+          </ul>
+
+          <div class="flex flex-wrap gap-4 pt-4 border-t border-soft">
             {
-                academicProjects.map((project) => (
-                    <div class="group space-y-8 flex flex-col h-full">
-                        <div class="relative aspect-video rounded-3xl overflow-hidden border-2 border-primaryDark/5 bg-gray-50/50 shadow-sm transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/5 group-hover:-translate-y-2">
-                            <div class="absolute top-0 left-0 right-0 h-8 bg-white/90 backdrop-blur-md border-b border-primaryDark/5 flex items-center px-4 gap-1.5 z-10">
-                                <div class="w-2.5 h-2.5 rounded-full bg-red-400/30" />
-                                <div class="w-2.5 h-2.5 rounded-full bg-yellow-400/30" />
-                                <div class="w-2.5 h-2.5 rounded-full bg-green-400/30" />
-                            </div>
-
-                            <div class="w-full h-full p-8 pt-12 flex items-center justify-center">
-                                <Image
-                                    src={project.image}
-                                    alt={project.title}
-                                    class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg drop-shadow-2xl transition-all duration-700 group-hover:scale-[1.05]"
-                                    loading="lazy"
-                                />
-                            </div>
-                        </div>
-
-                        <div class="px-2 flex flex-col flex-1">
-                            <div class="flex justify-between items-start gap-4 mb-4">
-                                <h4 class="text-2xl font-black text-primaryDark leading-tight tracking-tight">
-                                    {project.title}
-                                </h4>
-                                <a
-                                    href={project.github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="p-2.5 rounded-full bg-primary/5 text-primaryDark/60 hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300"
-                                    title="View Source Code"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <>
-                                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                                            <path d="M9 18c-4.51 2-5-2-7-2" />
-                                        </>
-                                    </svg>
-                                </a>
-                            </div>
-
-                            <p class="text-gray-600 font-medium leading-relaxed mb-6 flex-1">
-                                {project.description}
-                            </p>
-
-                            <div class="flex flex-wrap gap-2">
-                                {project.tech.map((tech) => (
-                                    <span class="px-3 py-1 text-[10px] font-black uppercase tracking-wider bg-primary/5 text-primaryDark/60 rounded-md border border-primary/5 transition-colors group-hover:border-primary/20">
-                                        {tech}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                ))
+              ["Oracle APEX", "Oracle Database", "SQL"].map((tech) => (
+                <span class="text-xs font-bold uppercase tracking-widest text-muted hover:text-accent transition-colors">
+                  {tech}
+                </span>
+              ))
             }
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div
+        class="relative border-2 border-accent rounded-3xl p-8 md:p-12
+           flex flex-col md:flex-row gap-10 items-start
+           transition-all duration-300
+          hover:border-glow group"
+      >
+        <div
+          class="w-20 h-20 rounded-2xl flex items-center justify-center shrink-0
+             border-2 border-accent
+             transition-colors duration-300
+             group-hover:border-glow"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 h-10 text-primaryDark"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M12 8c1.657 0 3-1.343 3-3S13.657 2 12 2 9 3.343 9 5s1.343 3 3 3zM6 22v-2a6 6 0 0112 0v2"
+            ></path>
+          </svg>
         </div>
 
-        <div class="py-10">
+        <div class="flex-1 space-y-6">
+          <div
+            class="flex flex-col md:flex-row md:items-center justify-between gap-4"
+          >
+            <h4 class="text-2xl font-black text-primaryDark tracking-tight">
+              Virtual Billing Assistant
+            </h4>
+            <div class="flex flex-col items-start md:items-end gap-2">
+              <span
+                class="inline-block px-4 py-1 rounded-full
+                   border-2 border-soft
+                   text-primaryDark text-[10px] font-black uppercase tracking-widest"
+              >
+                Professional Internship · CONTICR
+              </span>
+              <span
+                class="text-[10px] font-bold uppercase tracking-widest text-muted"
+              >
+                Jul 2025 – Nov 2025
+              </span>
+            </div>
+          </div>
 
+          <ul class="space-y-4 text-muted font-medium">
+            <li class="flex gap-4 items-start">
+              <span class="text-accent font-black">→</span>
+              <span>
+                Designed and implemented a virtual assistant to automate basic
+                electronic invoice generation via WhatsApp.
+              </span>
+            </li>
+            <li class="flex gap-4 items-start">
+              <span class="text-accent font-black">→</span>
+              <span>
+                Integrated AI-driven natural language processing using
+                <span class="text-primary font-bold"> Gemini 2.0</span>.
+              </span>
+            </li>
+          </ul>
+
+          <div class="flex flex-wrap gap-4 pt-4 border-t border-soft">
+            {
+              [
+                "n8n",
+                "WhatsApp API",
+                "Gemini 2.0 Flash",
+                "Oracle APEX",
+                "Docker",
+              ].map((tech) => (
+                <span class="text-xs font-bold uppercase tracking-widest text-muted hover:text-accent transition-colors">
+                  {tech}
+                </span>
+              ))
+            }
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- PROYECTOS ACADEMICOS -->
+    <div class="py-20">
+      <div class="p-6 max-w-6xl mx-auto">
+        <div class="mb-20">
+          <h2
+            class="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4"
+          >
+            02. Academic Showcase
+          </h2>
+          <h3
+            class="text-4xl md:text-5xl font-black text-primary tracking-tighter uppercase"
+          >
+            Selected <span class="text-primaryDark">Projects</span>
+          </h3>
+          <div class="w-16 h-1.5 bg-accent/60 mt-6 rounded-full"></div>
+        </div>
+        <!-- CONTENEDOR PROYECTOS -->
+        <div class="grid gap-14 md:gap-16 md:grid">
+          {
+            academicProjects.map((project) => (
+              <div
+                class="grid gap-14 md:gap-16 md:grid-cols-2 items-start
+                         transition-all duration-300
+                         hover:scale-[1.01] group hover:border-primary border-2 border-transparent rounded-2xl p-6"
+              >
+                <div class="relative aspect-[24/11] rounded-2xl overflow-hidden border border-primary bg-transparent">
+                  <div class="absolute inset-0 bg-primaryDark/[0.02] pointer-events-none z-10" />
+
+                  <div class="w-full h-full flex items-center justify-center p-1">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      class="max-w-full max-h-full w-auto h-auto object-contain rounded-xl brightness-[0.96] contrast-[0.98] transition-transform duration-500 group-hover:scale-[1.02]"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <div class="px-2 flex flex-col flex-1">
+                  <div class="flex justify-between items-start gap-4 mb-4">
+                    <h4 class="text-2xl font-black text-primaryDark leading-tight tracking-tight">
+                      {project.title}
+                    </h4>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="p-2.5 rounded-full bg-primary/5 text-primaryDark/60 hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300"
+                      title="View Source Code"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <>
+                          <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                          <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <p class="text-gray-600 font-medium leading-relaxed mb-6 flex-1">
+                    {project.description}
+                  </p>
+
+                  <div class="flex flex-wrap gap-2">
+                    {project.tech.map((tech) => (
+                      <span class="px-3 py-1 text-[10px] font-black uppercase tracking-wider bg-transparent text-primaryDark/60 rounded-md border border-primary transition-colors group-hover:border-accent">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <!-- FIN PROYECTOS ACADEMICOS-->
     </div>
+    <!-- FIN CONTENEDOR PRINCIPAL -->
+  </div>
 </section>
