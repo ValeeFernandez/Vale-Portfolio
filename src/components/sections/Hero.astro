@@ -5,7 +5,7 @@ import valeImg from "/src/images/vale.jpg";
 
 <section
   id="hero"
-  class="relative min-h-screen flex items-center justify-center py-24 md:py-8 bg-background overflow-hidden"
+  class="max-w-6xl mx-auto flex items-center justify-center py-24 md:py-8 bg-background"
 >
   <div
     class="relative w-full max-w-[1400px] mx-auto px-6 grid gap-20 md:grid-cols-2 md:gap-24 items-center"
@@ -56,7 +56,8 @@ import valeImg from "/src/images/vale.jpg";
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
             </svg>
           </span>
         </a>
@@ -75,21 +76,17 @@ import valeImg from "/src/images/vale.jpg";
       <!-- floating dots -->
       <div
         class="absolute top-4 right-4 w-12 h-12 rounded-full bg-glow blur-xl animate-bounce-slow"
-      >
-      </div>
+      ></div>
       <div
         class="absolute bottom-0 left-0 w-20 h-20 rounded-full bg-glow blur-2xl animate-float"
-      >
-      </div>
+      ></div>
       <div
         class="absolute top-1/4 left-0 w-5 h-5 rounded-full bg-glow blur-md animate-float"
-      >
-      </div>
+      ></div>
       <div
         class="absolute bottom-6 right-10 w-7 h-7 rounded-full bg-glow blur-lg animate-float"
         style="animation-delay: 2s;"
-      >
-      </div>
+      ></div>
 
       <div
         class="relative w-[300px] h-[300px] sm:w-[360px] sm:h-[360px] md:w-[620px] md:h-[620px] flex items-center justify-center"
@@ -99,28 +96,24 @@ import valeImg from "/src/images/vale.jpg";
         >
           <div
             class="absolute inset-[-6px] border-2 border-glow animate-spin-slower animate-blob"
-          >
-          </div>
+          ></div>
 
           <div
             class="absolute inset-8 md:inset-12 rounded-full border-2 border-dashed border-soft animate-spin-reverse-slow"
-          >
-          </div>
+          ></div>
 
           <div
             class="absolute inset-16 md:inset-24 rounded-full border border-glow animate-spin-slow"
           >
             <div
               class="absolute -top-2 left-1/2 w-4 h-4 rounded-full bg-accent shadow-lg"
-            >
-            </div>
+            ></div>
           </div>
 
           <div class="group relative z-10">
             <div
               class="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-100 blur transition duration-500"
-            >
-            </div>
+            ></div>
 
             <div
               class="relative w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-[6px] border-background bg-background shadow-2xl transition-transform duration-500 group-hover:scale-105"

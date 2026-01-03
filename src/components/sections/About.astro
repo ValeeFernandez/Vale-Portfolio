@@ -1,120 +1,94 @@
 <section
   id="about"
-  class="py-24 bg-background relative overflow-hidden transition-colors duration-500"
+  class="py-20 md:py-24 bg-background relative transition-[color,box-shadow,border] duration-300"
 >
   <div
-    class="max-w-6xl mx-auto px-6 grid gap-24 lg:gap-32 md:grid-cols-2 items-start"
+    class="
+      max-w-6xl
+      mx-auto
+      px-4 sm:px-6
+      grid
+      gap-12 md:gap-16 lg:gap-24
+      md:grid-cols-[1.2fr_0.8fr]
+      items-start
+    "
   >
     <!-- LEFT -->
-    <div class="z-10">
+    <div class="z-10 md:pr-12">
       <h2
-        class="text-5xl md:text-7xl font-black text-primary tracking-tighter uppercase leading-none"
+        class="
+          text-4xl
+          sm:text-5xl
+          md:text-7xl
+          font-black
+          text-primary
+          tracking-tighter
+          uppercase
+          leading-none
+        "
       >
         About Me
       </h2>
 
-      <!-- Divider -->
-      <div class="w-16 h-1 border-b-2 border-primaryDark mt-8 mb-16"></div>
+      <div class="w-16 h-1 border-b-2 border-primaryDark mt-6 md:mt-8 mb-10 md:mb-16"></div>
 
-      <div class="space-y-6">
-        <div
-          class="space-y-6 text-lg text-muted leading-relaxed max-w-xl"
-        >
-          <p>
-            I’m an
-            <span class="text-primaryDark font-semibold">
-              Information Systems Engineer
-            </span>
-            who enjoys building
-            <span class="text-primary font-semibold">
-              clean, thoughtful interfaces
-            </span>
-            and automating processes that make life easier.
-          </p>
+      <div
+        class="
+          space-y-6 md:space-y-8
+          text-base sm:text-lg
+          text-muted
+          leading-relaxed
+          max-w-xl
+        "
+      >
+        <p>
+          I’m an
+          <span class="text-primaryDark font-semibold">
+            Information Systems Engineer
+          </span>
+          focused on building
+          <span class="text-primary font-semibold">
+            clean, thoughtful interfaces
+          </span>
+          and automating processes that make work easier.
+        </p>
 
-          <p>
-            I care deeply about the
-            <span class="italic">user experience</span>, writing structured,
-            maintainable code, and understanding the
-            <span class="font-medium">why</span>
-            behind every decision.
-          </p>
+        <p>
+          I care deeply about
+          <span class="italic text-primaryDark/80">user experience</span>, writing maintainable
+          code, and understanding the
+          <span class="font-medium text-primaryDark">why</span>
+          behind every decision.
+        </p>
 
-          <p>
-            I value collaboration, clear communication, and creating solutions
-            that are not only functional, but meaningful for the people who use
-            them.
-          </p>
-        </div>
-
-        <!-- Buttons -->
-        <div class="flex flex-col sm:flex-row gap-6 pt-2">
-          <a
-            href="/cv/Lelany-Fernandez-CV-ES.pdf"
-            download
-            class="flex items-center justify-center gap-2 px-8 py-3 rounded-xl
-                   border-2 border-glow text-primary font-bold
-                   transition-all duration-300
-                   hover:border-primary hover:text-primaryDark
-                   active:scale-95"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-              />
-            </svg>
-            CV (ES)
-          </a>
-
-          <a
-            href="/cv/Lelany-Fernandez-CV-EN.pdf"
-            download
-            class="flex items-center justify-center gap-2 px-8 py-3 rounded-xl
-                   border-2 border-glow text-primaryDark font-bold
-                   transition-all duration-300
-                   hover:border-primaryDark hover:text-primary
-                   active:scale-95"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-              />
-            </svg>
-            CV (EN)
-          </a>
-        </div>
+        <p>
+          I value collaboration and clear communication, creating solutions
+          that are functional and meaningful for real users.
+        </p>
       </div>
     </div>
 
     <!-- RIGHT -->
-    <div class="md:pt-36 space-y-16">
-      <!-- Background -->
+    <div class="md:pt-12 space-y-14 md:space-y-20">
       <div>
         <h3
-          class="text-small font-black text-primaryDark uppercase tracking-[0.3em] mb-8"
+          class="
+            text-[16px] sm:text-[18px] md:text-[20px]
+            font-black
+            text-primaryDark
+            uppercase
+            tracking-[0.35em] md:tracking-[0.4em]
+            mb-8 md:mb-10
+            flex
+            items-center
+            gap-4
+          "
         >
           Background & Focus
+          <span class="h-px bg-primaryDark/10 flex-1"></span>
         </h3>
 
-        <div class="flex flex-wrap gap-4">
+        <div class="flex flex-wrap gap-2 sm:gap-3">
           {[
             "Information Systems",
             "Frontend Development",
@@ -123,10 +97,24 @@
             "Quality & Structure",
           ].map((skill) => (
             <span
-              class="px-5 py-2.5 border-2 border-glow rounded-lg
-                     text-primaryDark text-sm font-bold
-                     transition-all duration-300
-                     hover:border-primary hover:text-primary"
+              class="
+                px-4 sm:px-5
+                py-2 sm:py-2.5
+                border
+                border-primaryDark
+                rounded-full
+                text-primaryDark
+                text-[10px] sm:text-[11px]
+                font-black
+                uppercase
+                tracking-wider
+                transition-all
+                duration-300
+                hover:border-primary
+                hover:text-primary
+                hover:bg-primary/5
+                cursor-default
+              "
             >
               {skill}
             </span>
@@ -134,16 +122,35 @@
         </div>
       </div>
 
-      <!-- Skills -->
       <div>
         <h3
-          class="text-small font-black text-primaryDark uppercase tracking-[0.3em] mb-8"
+          class="
+            text-[16px] sm:text-[18px] md:text-[20px]
+            font-black
+            text-primaryDark
+            uppercase
+            tracking-[0.35em] md:tracking-[0.4em]
+            mb-8 md:mb-10
+            flex
+            items-center
+            gap-4
+          "
         >
           Skills & Technologies
+          <span class="h-px bg-primary flex-1"></span>
         </h3>
 
         <div
-          class="grid grid-cols-2 gap-y-6 gap-x-12 text-muted font-bold"
+          class="
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            gap-y-4 sm:gap-y-5
+            gap-x-6 sm:gap-x-8
+            text-muted
+            font-bold
+            text-sm
+          "
         >
           {[
             "Angular",
@@ -157,10 +164,16 @@
               class="group flex items-center gap-4 transition-colors duration-300 hover:text-primary"
             >
               <span
-                class="w-2.5 h-2.5 rounded-full border border-glow
-                       transition-all duration-300
-                       group-hover:border-primary"
-              ></span>
+                class="
+                  w-1.5
+                  h-1.5
+                  rounded-full
+                  bg-primary
+                  transition-all
+                  duration-300
+                  group-hover:scale-125
+                "
+              />
               {tech}
             </div>
           ))}
